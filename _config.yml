@@ -3,15 +3,8 @@ title: Push | Move your music forward
 email: push.music.team@gmail.com
 description: "Nós somos uma equipe de profissionais com o objetivo de impulsionar sonhos através da música."
 baseurl: "" # the subpath of your site, e.g. /blog/
-<<<<<<< HEAD
-url: "" # the base hostname & protocol for your site
-
-# Build settings
-markdown: kramdown
-permalink: pretty
-=======
 url: "http://felipefernandes.github.io/push.github.io/" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
->>>>>>> origin/gh-pages
+permalink: pretty
