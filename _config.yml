@@ -1,0 +1,10 @@
+# Site settings
+title: Push | Move your music forward
+email: push.music.team@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Nós somos uma equipe de profissionais com o objetivo de impulsionar sonhos através da música.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown

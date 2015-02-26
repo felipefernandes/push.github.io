@@ -1,0 +1,404 @@
+// Less 
+
+/* Variaveis */
+@cinza: #777;
+
+
+::selection {
+  background: #ef3d3d; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ef3d3d; /* Gecko Browsers */
+}
+
+
+body {
+	padding-top: 50px;			/* for fixed topbar */
+    font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+}
+
+
+.botao {
+    display: block;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;    
+    margin-bottom: 10px;
+    
+    span {
+        background: #000;
+        padding:2px 4px;
+    }
+    
+    &:hover {
+        color:#fff;
+        text-decoration: none;
+    }
+}
+
+
+.thePage {
+    position: relative;
+    
+    .corpoPage {
+        background-size: auto auto;
+        padding: 0 0 520px 0;
+        position: relative;
+        z-index: 1; 
+        
+        box-sizing: border-box;
+        margin: 0 auto!important;
+        padding: 0;
+        
+        section {
+            max-width: 1200px;
+            margin: 0 auto!important;
+        }
+        
+        .titulo {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 35px 0 55px;
+
+            h3 {
+                font-size: 35px;        
+                font-style: italic;
+            }
+
+            .subtitulo {
+                font-size: 16px;
+                font-weight: lighter;
+                color: @cinza;
+                letter-spacing: 1px;
+            }  
+        }
+    }
+    
+    .rodapePage {
+        text-align: center;
+        clear: both;
+    }
+}
+
+
+#frontSite {
+    position: relative;
+    height: 650px;
+    color: #fff; 
+    
+    .the-logo {
+        position: relative;
+        width: 674px;
+        margin: 130px auto 0 !important;
+        z-index: 2;
+    }
+    
+    .role-para-baixo {
+        display: block;
+        position: relative;
+        width: 32px;
+        height: 32px;
+        z-index: 5;
+        margin: 170px auto 0;
+    }
+    
+    .bg-pattern-frontsite,
+    .bg-frontsite {
+        position: absolute;
+        width: 100%;   
+        top: 0;
+        height: 660px;
+    }
+    
+    .bg-pattern-frontsite {
+        background: transparent url('/img/pattern-frontpage.png');
+        z-index: 1;        
+        
+    }
+    
+    .bg-frontsite {
+        background: #000 url('/img/bg-frontpage-1.png') center no-repeat;
+        background-size: cover;        
+        z-index: 0;
+    }  
+}
+
+
+
+
+
+
+
+#talentos {
+    background: #000;
+    
+    
+    .corpoPage {
+        padding: 90px 0 200px;;
+        
+        .titulo {
+            color: #fff;
+        }
+    }
+
+
+    .grid-talentos {
+        .artista {
+            max-height: 200px;
+            overflow: hidden;
+            margin-bottom: 30px;
+
+            img {                    
+                width: 100% !important;
+                height: auto !important;
+            }
+        }
+    }
+
+
+    
+    .pageFooter {
+        &:before {
+            background: #000;
+            content: "";
+            height: 950px;
+            position: absolute;
+            top: -120px;
+            -webkit-transform: skewY(8deg);
+            -moz-transform: skewY(8deg);
+            -ms-transform: skewY(8deg);
+            -o-transform: skewY(8deg);
+            transform: skewY(8deg);
+            width: 100%;
+        }
+        
+        &:after {
+            bottom: -175px;
+            top: auto;
+        }
+    }
+    
+    
+}
+
+
+
+#sobre {
+    
+    .corpoPage {                
+        padding: 200px 0 0 0;        
+        min-height: 522px;       
+    }
+    
+    .the-formula {
+        background: rgba(255,255,255,0.4);
+        padding: 50px 0;
+        margin: 20px 0 50px;
+        text-align: center;
+    }
+    
+    .pageFooter {
+        &:before {
+            background: #f9f8f3 url('/img/bg-sobre.png') fixed center -280px  no-repeat;
+            background-size: cover;
+            content: "";
+            height: 750px;
+            position: absolute;
+            top: 75px;
+            -webkit-transform: skewY(8deg);
+            -moz-transform: skewY(8deg);
+            -ms-transform: skewY(8deg);
+            -o-transform: skewY(8deg);
+            transform: skewY(8deg);
+            width: 100%;
+        }
+        
+        &:after {
+            bottom: -175px;
+            top: auto;
+        }
+    }
+}
+
+
+
+#blog {
+    .corpoPage {
+        padding: 160px 0 0 0;
+    }
+    
+    .titulo {
+        text-align: left;
+        
+        h3 {
+            font-size: 60px;
+            font-style: normal;
+        }
+    }
+
+    .moisaco-posts {
+        margin: 0;
+
+        .moisaco-posts-casulo {
+            float: left;
+        }
+
+        .box-post {
+            position: relative;
+            max-height: 200px;
+            padding: 0;
+            overflow: hidden;
+            background-color: #91203d;
+
+            .thumb-post {
+                img {                    
+                    width: 100% !important;
+                    height: auto !important;
+                }
+            }
+
+            .titulo-post {
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                padding: 20px;
+                background-color: rgba(0, 0, 0, 0.6);
+                text-transform: uppercase;
+                color: #fff;
+
+                a {
+                    color: #fff;
+                    &:hover {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+
+                .cat {
+                    display: block;
+                    text-decoration: underline;
+
+                    &:hover {
+                        color: #d0ce64;
+                    }
+                }
+
+                .permalink {
+                    display: block; 
+                    font-size: 25px;  
+
+                    &:hover {
+                        text-decoration: none;
+                        color: #f6f5c0;
+                    }                 
+                }
+            }
+
+
+        }
+
+        .box {
+            
+        }
+
+        .box-horizontal {
+            
+
+        }
+
+        .box-destaque {
+            max-height: 400px;
+
+        }
+
+
+
+
+    }
+
+
+
+}
+
+#contato {
+    overflow: hidden;
+    
+    .corpoPage {
+        padding: 250px 0 50px 0;
+        
+        .titulo {
+            color:#fff;
+        }
+    }
+    
+    .formulario {
+        text-align: center;
+        padding-bottom: 85px;
+
+        input {
+            border-radius: 0;
+            background-color: #000;
+            color: #fff;            
+            font-size: 18px;
+            font-style: italic;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .form-input-area {
+            margin: 0 auto 30px !important;
+            float: none;
+        }
+    }
+    
+    .pageFooter {
+        &:before {
+            background: #000;
+            background-size: cover;
+            content: "";
+            height: 750px;
+            position: absolute;
+            top: 125px;
+            -webkit-transform: skewY(8deg);
+            -moz-transform: skewY(8deg);
+            -ms-transform: skewY(8deg);
+            -o-transform: skewY(8deg);
+            transform: skewY(8deg);
+            width: 100%;
+        }
+        
+        &:after {
+            bottom: -175px;
+            top: auto;
+        }
+    }
+    
+}
+
+#sociais {
+    background: #513925;
+    text-align: center;
+    
+    .corpoPage {
+        padding:80px 0 100px;
+
+        .titulo {
+            h4 {
+                font-size: 18px;
+                color: #fff;
+                text-transform: uppercase;
+            }
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: inline-block;
+            }
+        }
+    }
+}
+
