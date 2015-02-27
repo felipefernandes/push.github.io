@@ -13,16 +13,20 @@
   <title>Welcome to Jekyll!</title>
   <meta name="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...">
 
+  <!-- fonts -->
   <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic' rel='stylesheet' type='text/css'>
     
+  <!-- bootstrap 3 -->
   <link rel="stylesheet" href="/css/bootstrap.min.css">   
   <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
     
+  <!-- custom less -->
   <link rel="stylesheet/less" type="text/css" href="/less/main.less">
-  <link rel="canonical" href="http://yourdomain.com/jekyll/update/2015/02/25/welcome-to-jekyll.html">
-  <link rel="alternate" type="application/rss+xml" title="Push | Move your music forward" href="http://yourdomain.com/feed.xml" />
+  
+  <link rel="canonical" href="http://www.push.art.br/jekyll/update/2015/02/25/welcome-to-jekyll/">
+  <link rel="alternate" type="application/rss+xml" title="Push | Move your music forward" href="http://www.push.art.br/feed.xml" />
     
-  <script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <script src="http://www.push.art.br/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
 
   <body>
@@ -44,11 +48,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">Push | Move your music forward</a>
+                <a class="navbar-brand" href="http://www.push.art.br/">Push | Move your music forward</a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="/">Início</a></li>
+                    <li class="active"><a href="http://www.push.art.br/">Início</a></li>
                     
                       
                       <li><a class="page-link" href="/about/">About</a></li>
@@ -102,10 +106,14 @@
 <script src="/js/main.js"></script>
 
 <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60181424-1', 'auto');
+  ga('send', 'pageview');
+
 </script>
 
   </body>
