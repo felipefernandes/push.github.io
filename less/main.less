@@ -13,9 +13,10 @@
 
 
 body {
+    position: relative;
 	padding-top: 50px;			/* for fixed topbar */
     font-family: 'Ubuntu', sans-serif;
-	font-size: 14px;
+	font-size: 14px;    
 }
 
 .botao {
@@ -425,6 +426,17 @@ body {
 
             li {
                 display: inline-block;
+                margin:0 5px;
+
+                a {
+                    display: block;
+                    width: 32px;
+                    height: 32px;
+                    text-indent: -9999px;
+                }
+
+                a.facebook      { background: url('/img/ico-facebook.png') no-repeat; }
+                a.soundcloud    { background: url('/img/ico-soundcloud.png') no-repeat; }
             }
         }
     }
