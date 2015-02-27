@@ -19,4 +19,8 @@ $(document).ready(function() {
 		$('.nav a#nav_btn_talentos').click();
 	});
 
+	$('#entre-em-contato').click(function() {
+		$('.nav a#nav_btn_contato').click();
+	});
+
 });
