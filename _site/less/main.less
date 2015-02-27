@@ -110,9 +110,15 @@ body {
     
     .the-logo {
         position: relative;
-        width: 674px;
+        max-width: 674px;
+        height: auto;
         margin: 130px auto 0 !important;
         z-index: 2;
+
+        img {                    
+            width: 100% !important;
+            height: auto !important;
+        }
     }
     
     .role-para-baixo {
@@ -216,7 +222,7 @@ body {
         background: rgba(255,255,255,0.4);
         padding: 50px 0;
         margin: 20px 0 50px;
-        text-align: center;
+        text-align: center;        
     }
     
     .pageFooter {
@@ -267,7 +273,7 @@ body {
 
         .box-post {
             position: relative;
-            max-height: 200px;
+            max-height: 157px;
             padding: 0;
             overflow: hidden;
             background-color: #91203d;
@@ -307,7 +313,7 @@ body {
 
                 .permalink {
                     display: block; 
-                    font-size: 25px;  
+                    font-size: 20px;  
 
                     &:hover {
                         text-decoration: none;
@@ -329,7 +335,7 @@ body {
         }
 
         .box-destaque {
-            max-height: 400px;
+            max-height: 314px;
 
         }
 
@@ -343,7 +349,8 @@ body {
 }
 
 #contato {
-    overflow: hidden;
+    overflow: hidden;    
+    background: none;
     
     .corpoPage {
         padding: 250px 0 50px 0;
@@ -423,3 +430,86 @@ body {
     }
 }
 
+@screen-xs-max: 768px;
+@screen-sm-min: 768px;
+@screen-md-min: 992px;
+@screen-lg-min: 1200px;
+
+@media (max-width: @screen-xs-max) { 
+    .navbar-brand {
+        margin-left: 15px !important;
+    }
+
+/*    #contato {
+        background-color: #000;
+    }*/
+
+    .navbar .navbar-nav {
+        float: none;
+    }
+
+    .box-post {
+        margin-bottom: 15px;
+    }
+
+    .the-formula {
+        img {                    
+            width: 80% !important;
+            height: auto !important;
+        }
+    }
+}
+
+@media (min-width: @screen-sm-min) {
+    .navbar-brand {
+        margin-left: 15px;
+    }
+
+/*    #contato {
+        background-color: #000;
+    }*/
+    .the-formula {
+        img {                    
+            width: 80%;
+            height: auto;
+        }
+    }
+
+    .box-post {
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: @screen-md-min) {
+    /*.navbar-brand {
+        margin-left: -15px !important;
+    }*/
+
+    .box-post {
+        margin-bottom: 0;
+    }
+
+    .the-formula {
+        img {                    
+            width: auto;
+            height: auto;
+        }
+    }
+}
+
+@media (min-width: @screen-lg-min) {
+    /*.navbar-brand {
+        margin-left: -30px !important;
+    }*/
+
+    .box-post {
+        margin-bottom: 0;
+    }
+
+    .the-formula {
+        img {                    
+            width: auto;
+            height: auto;
+        }
+    }
+}
